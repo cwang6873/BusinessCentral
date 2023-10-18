@@ -47,8 +47,32 @@ page 50900 "Active User Sessions"
             }
         }
     }
+    actions
+    {
+        area(Processing)
+        {
+            action("R&efreshing")
+            {
+                ApplicationArea = All;
+                Caption = 'Refresh';
+                ToolTip = 'Refresh Page Data';
+
+                trigger OnAction()
+                begin
+                    Rec.DeleteAll();
+                    PopulateSessions();
+                    CurrPage.Update();
+                end;
+            }
+        }
+    }
 
     trigger OnOpenPage()
+    begin
+        PopulateSessions();
+    end;
+
+    Local procedure PopulateSessions()
     var
         ActiveSession: Record "Active Session";
         LastUserID: Text[132];
