@@ -1,0 +1,33 @@
+{
+    "id": "69a77a0a-202a-4a81-a7c8-eb4346cd56c5",
+    "name": "Business Central Tool",
+    "publisher": "Infuzion Solutions LLC.",
+    "version": "1.0.0.1",
+    "brief": "Business Central Tool",
+    "description": "Business Central List Active Sessions",
+    "privacyStatement": "",
+    "EULA": "",
+    "help": "",
+    "url": "",
+    "logo": "",
+    "dependencies": [
+    ],
+    "screenshots": [],
+    "platform": "1.0.0.0",
+    "application": "22.0.0.0",
+    "idRanges": [
+      {
+        "from": 50900,
+        "to": 50999
+      }
+    ],
+    "resourceExposurePolicy": {
+      "allowDebugging": true,
+      "allowDownloadingSource": false,
+      "includeSourceInSymbolFile": false
+    },
+    "runtime": "11.0",
+    "features": [
+      "NoImplicitWith"
+    ]
+  }
